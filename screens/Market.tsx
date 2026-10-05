@@ -151,7 +151,7 @@ const Market = ({ getCoinMarket, coins }) => {
         showsHorizontalScrollIndicator={false}
         keyExtractor={(item) => "" + item.id}
         onScroll={Animated.event(
-          [{ nativeEven: { contentOffset: { x: scrollX } } }],
+          [{ nativeEvent: { contentOffset: { x: scrollX } } }],
           { useNativeDriver: false }
         )}
         renderItem={({ item, index }) => {
